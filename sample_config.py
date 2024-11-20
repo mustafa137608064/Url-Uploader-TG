@@ -4,8 +4,8 @@ class Config(object):
     # get a token from @BotFather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", ""))
+    API_HASH = os.environ.get("API_HASH", "")
     # Get these values from my.telegram.org
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
@@ -31,6 +31,6 @@ class Config(object):
     # your telegram id
     OWNER_ID = int(os.environ.get("OWNER_ID", ""))
     # database session name(mongoDb)
-    SESSION_NAME = os.environ.get("SESSION_NAME", "")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "Url-Uploader-TG")
     # database uri (mongodb)
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
